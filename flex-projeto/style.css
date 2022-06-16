@@ -14,6 +14,11 @@ ul li a{
     text-decoration: none;
 }
 
+div img{
+    display: block;
+    width: 100%;
+}
+
 .container{
     display: flex;
     max-width: 992px;
@@ -45,11 +50,13 @@ header .list-items{
 header .menu{
     justify-content: space-between;
 }
- /* --------------*/
+ /* -------   Apresentação  -------*/
+  /* -------      -------*/
+   /* -------      -------*/
 .apresentacao{
     height:100vh;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .apresentacao .txtapresent{
@@ -77,4 +84,35 @@ header .menu{
 
 }
 
- /* --------------*/
+ /* --------     ------*/
+  /* -------     -------*/
+   /* -------     -------*/
+
+   #quemsomos{
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+   }
+ 
+   #quemsomos h2{
+    font-size: 32px;
+    color: #122A57;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+   }
+
+#quemsomos h2::before{
+    content: "";
+    height: 50px;
+    width: 5px;
+    margin: 5px;
+    margin-right: 5px;
+    background-color: #122A57;
+    position: relative;
+}
+
+#quemsomos p{
+    margin-bottom: 10px;
+    width: 90%;
+}
